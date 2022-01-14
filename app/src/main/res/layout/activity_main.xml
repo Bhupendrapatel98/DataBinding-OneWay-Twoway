@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="MainActivityBinding">
+        <variable
+            name="text1"
+            type="String" />
+        <variable
+            name="text2"
+            type="String" />
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="@{text1,default=`Enter Name`}"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:text="@{text2,default=`Enter Email`}"/>
+
+
+</LinearLayout>
+
+</layout>
