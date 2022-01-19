@@ -10,6 +10,9 @@
         <variable
             name="text2"
             type="String" />
+        <variable
+            name="text3"
+            type="String" />
     </data>
 
 <LinearLayout
@@ -34,6 +37,12 @@
         android:textSize="20dp"
         android:layout_height="wrap_content"
         android:text="@{text2,default=`Enter Email`}"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        imageFromUrl="@{text3}"/>
 
 
 </LinearLayout>
